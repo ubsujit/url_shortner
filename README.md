@@ -1,7 +1,8 @@
 # url_shortner
 Containerized url_shortner
 
-##Setting up application
+<h2>Setting up application</h2>
+<pre>
 1. Clone the repositiry
   `git clone` 
 2. Traverse insede url-shortner directory
@@ -15,3 +16,4 @@ Containerized url_shortner
   url_shortner                            latest          d772fc233276   2 minutes ago   449MB
 5. Run docker container from image
   `docker run -p 5000:5000 url-shortner:latest`
+</pre>
