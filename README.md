@@ -33,9 +33,40 @@ curl http://0.0.0.0:5000/url_shortner/url=<url>
 <h2> Testing </h2>
 <pre>
 Case1:
-enter just URL :  curl http://0.0.0.0:5000/
+Description: if you just enter below URl it will describe what is this app and how to use
+enter URL :  curl http://0.0.0.0:5000/
+output:
 </pre>
-`<pre>+++++++++Welcome to free URL shortening service+++++++++
+<pre>+++++++++Welcome to free URL shortening service+++++++++
          please enter below api call to shorten your URL
-         curl http://0.0.0.0:5000/url_shortner/url=google.com </pre>`
+         curl http://0.0.0.0:5000/url_shortner/url=google.com </pre>
+<pre>
+
+Case2:
+Description: pass on some URL and it return shortened URL
+enter URL :  curl http://0.0.0.0:5000/url_shortner/url=yahoo.com
+output:
+</pre>
+<pre> http://0.0.0.0:5000/xjmb38</pre>
+
+Case3:
+Description: Re-enter the same URL
+enter URL :  curl http://0.0.0.0:5000/url_shortner/url=yahoo.com
+output:
+</pre>
+<pre>URL alraedy exists, the shortned URL is http://0.0.0.0:5000/xjmb38</pre>
+
+Case4:
+Description: Error handling enter wrong url
+enter url: curl http://0.0.0.0:5000/ur
+output:
+</pre>
+<pre>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+</pre>
+
+
 
