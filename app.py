@@ -51,11 +51,11 @@ def shorten_url(url):
                 with open('url_data.json', "w") as fd:
                     fd.write(json.dumps(url_data))
                 flag = 1
-                return url_dict["short"]
+                return "{}\n".format(url_dict["short"])
             else:
                 raise Exception("Internal server error- Failed to generate short URL")
     except Exception as e:
-        return "Exception {}".format(e)
+        return "Exception {}\n".format(e)
 
 def generate_short_url():
     try:
