@@ -40,7 +40,7 @@ def shorten_url(url):
             status, response = generate_short_url()
             # Check if short url already assigned to other URLs
             if status:
-                for url_element in config_data:
+                for url_element in url_data:
                     if url_element["short"] == response:
                         flag = 0
                         break
