@@ -17,7 +17,7 @@ app = Flask(__name__)
 @app.route('/')
 def welcome_msg():
     try:
-        return "Welcome to free URL shortening service \n \
+        return "+++++++++Welcome to free URL shortening service+++++++++ \n \
         please enter below api call to shorten your URL \n \
         curl http://0.0.0.0:5000/url_shortner/url=google.com \n"
     except Exception as e:
