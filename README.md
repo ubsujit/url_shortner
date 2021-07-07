@@ -55,8 +55,8 @@ enter URL :  curl http://0.0.0.0:5000/url_shortner/url=yahoo.com
 output:
 </pre>
 <pre>URL alraedy exists, the shortned URL is http://0.0.0.0:5000/xjmb38</pre>
-
-Case4:
+<pre>
+<b>Case4:</b>
 Description: Error handling enter wrong url
 enter url: curl http://0.0.0.0:5000/ur
 output:
