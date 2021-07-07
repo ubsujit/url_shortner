@@ -48,7 +48,7 @@ enter URL :  curl http://0.0.0.0:5000/url_shortner/url=yahoo.com
 output:
 </pre>
 <pre> http://0.0.0.0:5000/xjmb38</pre>
-
+<pre>
 Case3:
 Description: Re-enter the same URL
 enter URL :  curl http://0.0.0.0:5000/url_shortner/url=yahoo.com
