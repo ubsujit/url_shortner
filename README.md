@@ -1,5 +1,5 @@
 # url_shortner
-Containerized url_shortner
+This application accepts the URL as input and shortens the URL and returns to the user. This application is implemented as docker image. Kindly follow below steps to setup and run the application. Apllication also checks if the provided url is already shortened, if so it returns the shortened URL. All te data is maintained in text file named url-data.json. Every time api request is recieved the it will be updated in data file.
 
 <h2>Setting up application</h2>
 <pre>
